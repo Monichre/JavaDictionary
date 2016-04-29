@@ -6,15 +6,11 @@ public class Word {
 
 	public Word(String word){
 		mWord = word;
-
 	}
 
-	public Definition addDefinition(Definition str){
+	public void addDefinition(Definition str){
 		definitions.add(str);
-		System.out.println(definitions);
-		Definition wordNeeded = definitions.get(0);
-		
-		return wordNeeded;
+	
 	}
 
 	
