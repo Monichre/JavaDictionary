@@ -1,16 +1,27 @@
-<h1>Webster's Dictionary</h1>
-<h3>Add a new entry</h3>
+<h1>The Epicodus Dictionary</h1>
 
-<form action='/dictionary'>
-  <div class="form-group">
-    <label for="word">Word</label>
-    <input id="word" name="word" class="form-control" type="text">
-  </div>
+#if ($word)
+  <ul class="newWords"> Entries
+    #foreach ($word in $words)
+        <li><a href="/contactInfo/$contact.getId()">$word.getDefinition()</a></li>
+    #end
+  </ul>
+#else
+  <p>No new entries!</p>
+#end
 
-  <div class="form-group">
-    <label for="definition">Definition</label>
-    <input id="definition" name="definition" class="form-control" type="text">
-  </div>
+<p>Add a new Entry:</p>
 
-  <button type="submit" class="btn">Add</button>
+<form action="/words" method="post">
+
+<!--ENTRY INPUT -->
+
+  <label for="word">Dictionary Entry</label>
+  <input id="word" name="word" type="text">
+  <label for="definition">Add a definition</label>
+  <input id="definition" name="definition" type="text">
+
+  <button type="submit" class="btn btn-default">Submit Entry</button>
+
+
 </form>
