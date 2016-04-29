@@ -12,14 +12,15 @@ public class Word {
 		mWord = word;
 		dictionary.add(this);
 		mId = dictionary.size();
-	}
+	} // TESTED
 
 	public Word(String word, Definition str){
 		mWord = word;
 		definitions.add(str);
 		dictionary.add(this);
 		mId = dictionary.size();
-	}
+	}//TESTED
+
 	// END OF CONSTRUCTOR METHOD SIGNATURE //
 
 	public String getWord(){
@@ -40,7 +41,7 @@ public class Word {
 
 	public void addDefinition(Definition str){
 		definitions.add(str);
-	}
+	} // TESTED
 
 	public String getDefinition(){
 		String definitionString = "";
@@ -48,7 +49,7 @@ public class Word {
 			definitionString += definition;
 		}
 		return definitionString;
-	}
+	}// TESTED
 
 	public static ArrayList<Word> getAll(){
 		return dictionary;

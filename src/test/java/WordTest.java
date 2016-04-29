@@ -26,5 +26,12 @@ public void Word_ReturnsDefinition_True() {
 	assertEquals(defToAdd, testWord.getDefinition());
 }
 
+@Test
+public void getWordReturnsWord_True() {
+	String word = "word";
+	Word test = new Word("word");
+	assertEquals(word, test.getWord());
+}
+
 	
 }   
