@@ -38,7 +38,23 @@ public class App {
 	model.put("template", "templates/definitions.vtl");
 	return new ModelAndView(model, layout);
 	}, new VelocityTemplateEngine());
+
+	post("/anotherDefinition", (request, response) -> {
+	Word word = Word.find(Integer.parseInt(request.params(":id")));
+	ArrayList<Definition> definitions = Word.getAllDefinitions();
+	HashMap model = new HashMap();
+	String newDefinition = request.queryParams("anotherDefinition");
+	Definition anotherDefinition = new Definition(newDefinition);
+	word.addDefinition(anotherDefinition);
+
+	model.put("word", word);
+	model.put("definitions", definitions);
+	model.put("template", "templates/definitions.vtl");
+	return new ModelAndView(model, layout);
+	}, new VelocityTemplateEngine());
 	
 }
+
+
 
 }
