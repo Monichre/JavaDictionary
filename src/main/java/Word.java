@@ -25,7 +25,7 @@ public class Word {
 
 	public String getWord(){
 		return mWord;
-	}
+	}// TESTED
 
 	// public static Word getWord(String word){
 	// 	String wordString = "";
@@ -52,6 +52,7 @@ public class Word {
 	}// TESTED
 
 	public static ArrayList<Word> getAll(){
+		System.out.println(dictionary);
 		return dictionary;
 	}
 
