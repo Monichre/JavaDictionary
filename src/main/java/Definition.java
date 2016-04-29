@@ -2,8 +2,10 @@ import java.util.*;
 
 public class Definition {
 
-	public Definition{
-		
+	private String mDefinition;
+
+	public Definition(String str){
+		mDefinition = str;
 	}
 	
 }
