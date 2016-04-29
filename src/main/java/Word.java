@@ -13,5 +13,14 @@ public class Word {
 	
 	}
 
+	public String getDefinition(){
+		String definitionString = "";
+		for(Definition definition : definitions){
+			definitionString += definition;
+		}
+		System.out.println(definitionString);
+		return definitionString;
+	}
+
 	
 }
