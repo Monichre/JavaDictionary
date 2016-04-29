@@ -18,10 +18,26 @@ public class App {
 	return new ModelAndView(model, layout);
 	}, new VelocityTemplateEngine());
 
-	// post("/words", (request, response) -> {
+	post("/words", (request, response) -> {
+	ArrayList<Word> words = Word.getAll();
+	HashMap model = new HashMap();
+	String inputWord = request.queryParams("word");
+	String inputDef = request.queryParams("definition");
+	Definition definition = new Definition(inputDef);
+	Word word = new Word(inputWord, definition); 
+	model.put("words", words);
+	model.put("template", "templates/home.vtl");
+	return new ModelAndView(model, layout);
+	}, new VelocityTemplateEngine());
 
-	// HashMap model = new HashMap();
-	// ArrayList<Word> words = Word.getAll();
+	get("/definitions/:id", (request, response) -> {
+	HashMap model = new HashMap();
+	Word word = Word.find(Integer.parseInt(request.params(":id")));
+	
+	model.put("word", word);
+	model.put("template", "templates/definitions.vtl");
+	return new ModelAndView(model, layout);
+	}, new VelocityTemplateEngine());
 	
 }
 

@@ -27,6 +27,10 @@ public class Word {
 		return mWord;
 	}// TESTED
 
+	public Integer getId(){
+    return mId;
+  }
+
 	// public static Word getWord(String word){
 	// 	String wordString = "";
 	// 	for(int i = 0; i <= definitions.length; i ++){

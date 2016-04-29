@@ -1,9 +1,9 @@
 <h1>The Epicodus Dictionary</h1>
 
-#if ($word)
+#if ($words)
   <ul class="newWords"> Entries
     #foreach ($word in $words)
-        <li><a href="/contactInfo/$contact.getId()">$word.getDefinition()</a></li>
+        <li><a href="/definitions/$word.getId()">$word.getDefinition()</a></li>
     #end
   </ul>
 #else
@@ -22,6 +22,4 @@
   <input id="definition" name="definition" type="text">
 
   <button type="submit" class="btn btn-default">Submit Entry</button>
-
-
 </form>
