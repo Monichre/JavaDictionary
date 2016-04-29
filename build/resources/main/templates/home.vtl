@@ -1,9 +1,9 @@
 <h1>The Epicodus Dictionary</h1>
 
 #if ($words)
-  <ul class="newWords"> Entries
+  <ul class="newWords"> Latest Entries
     #foreach ($word in $words)
-        <li><a href="/definitions/$word.getId()">$word.getDefinition()</a></li>
+        <li><a href="/definitions/$word.getId()">$word.getWord()</a></li>
     #end
   </ul>
 #else

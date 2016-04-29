@@ -5,9 +5,16 @@ public class DefinitionTest {
 
 
 @Test
-public void Word_InstanceOfWord_True() {
+public void instanceOfDefinition_True() {
 	Definition testDefinition = new Definition("example");
 	assertEquals(true, testDefinition instanceof Definition);
+}
+
+@Test
+public void returnsDefinition_True() {
+	Definition testDefinition = new Definition("example");
+	String example = "example";
+	assertEquals(example, testDefinition.getDefinition());
 }
 
 	

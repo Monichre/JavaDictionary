@@ -8,4 +8,7 @@ public class Definition {
 		mDefinition = str;
 	}
 	
+	public String getDefinition(){
+		return mDefinition;
+	}
 }

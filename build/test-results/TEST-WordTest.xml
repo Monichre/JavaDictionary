@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-29T20:26:49" hostname="Liams-MacBook-Air.local" time="0.0">
+<testsuite name="WordTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-29T21:03:23" hostname="Liams-MacBook-Air.local" time="0.0">
   <properties/>
   <testcase name="returnsWordId" classname="WordTest" time="0.0"/>
-  <system-out><![CDATA[Word@6e79478f
+  <system-out><![CDATA[Word@37cb6214
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
