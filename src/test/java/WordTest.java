@@ -11,9 +11,12 @@ public void Word_InstanceOfWord_True() {
 }
 
 @Test
-public void Word_addedDefition() {
+public void Word_addedDefitionIsAnArrayList_True() {
 	Word testWord = new Word("word");
-	assertEquals(true, testWord instanceof Word);
+	Definition wordToAdd = new Definition("This is a definition");
+	Definition testDef = new Definition("blah");
+	testWord.addDefinition(wordToAdd);
+	assertEquals(wordToAdd, testWord.addDefinition(wordToAdd));
 }
 
 	

@@ -9,9 +9,13 @@ public class Word {
 
 	}
 
-	// public void String addDefinitions(Definition str){
-	// 	definitions.add(str);
-	// }
+	public Definition addDefinition(Definition str){
+		definitions.add(str);
+		System.out.println(definitions);
+		Definition wordNeeded = definitions.get(0);
+		
+		return wordNeeded;
+	}
 
 	
 }
