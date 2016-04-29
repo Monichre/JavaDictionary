@@ -54,14 +54,15 @@ public class Word {
 	public static ArrayList<Word> getAll(){
 		System.out.println(dictionary);
 		return dictionary;
-	}
+	}//TESTED
 
 
 	public static Word find(int id){
     try {
-      return dictionary.get(id - 1);
-    } catch (IndexOutOfBoundsException e){
-      return null;
+    	System.out.println(dictionary.get(id - 1));
+	  return dictionary.get(id - 1);
+	} catch (IndexOutOfBoundsException e){
+	  return null;
     }
   }
 

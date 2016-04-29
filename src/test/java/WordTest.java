@@ -36,16 +36,24 @@ public class WordTest {
 // 	assertEquals(word, test.getWord());
 // }
 
+// @Test
+// public void getAllReturnsDictionary() {
+// 	ArrayList<Word> testArray = new ArrayList<Word>();
+// 	Word test1 = new Word("word1");
+// 	Word test2 = new Word("word2");
+// 	Word test3 = new Word("word3");
+// 	testArray.add(test1);
+// 	testArray.add(test2);
+// 	testArray.add(test3);
+// 	assertEquals(testArray, Word.getAll());
+// }
+
 @Test
-public void getAllReturnsDictionary() {
-	ArrayList<Word> testArray = new ArrayList<Word>();
-	Word test1 = new Word("word1");
-	Word test2 = new Word("word2");
-	Word test3 = new Word("word3");
-	testArray.add(test1);
-	testArray.add(test2);
-	testArray.add(test3);
-	assertEquals(testArray, Word.getAll());
+public void returnsWordId() {
+	Word testWord = new Word("esoteric");
+	Word testWord2 = new Word("another");
+	Word test = new Word("word");
+	assertEquals(testWord2, Word.find(2));
 }
 
 	
