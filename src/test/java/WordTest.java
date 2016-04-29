@@ -10,5 +10,11 @@ public void Word_InstanceOfWord_True() {
 	assertEquals(true, testWord instanceof Word);
 }
 
+@Test
+public void Word_addedDefition() {
+	Word testWord = new Word("word");
+	assertEquals(true, testWord instanceof Word);
+}
+
 	
 }   

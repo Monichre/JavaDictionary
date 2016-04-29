@@ -9,5 +9,9 @@ public class Word {
 
 	}
 
+	// public void String addDefinitions(Definition str){
+	// 	definitions.add(str);
+	// }
+
 	
 }
