@@ -1,13 +1,26 @@
 <div class="row">
   
-<h1>$word.getWord()</h1>
-<ul>
-  #if (!($word.getDefinition()))
-    <li>No Definition</li>
-  #else
-  <li>$word.getDefinition()</li>
-  #end
-</ul>
+	<h1>$word.getWord()</h1>
+	<ul>
+	  #if (!($word.getDefinition()))
+	    <li>No Definition</li>
+	  #else
+	  <li>$word.getDefinition()</li>
+	  #end
 
-  
+
+
+
+	</ul>
+
+
+
+<!-- 
+	<form action="/anotherDefinition" method="post">
+		<label for="anotherDefinition">Add another definition</label>
+	  	<input id="anotherDefinition" name="anotherDefinition" type="text">
+
+	  	<button type="submit" class="btn btn-default">Submit Definition</button>
+	</form> -->
+
 </div>

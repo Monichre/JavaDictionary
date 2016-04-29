@@ -31,15 +31,9 @@ public class Word {
     return mId;
   }
 
-	// public static Word getWord(String word){
-	// 	String wordString = "";
-	// 	for(int i = 0; i <= definitions.length; i ++){
-	// 		wordString += definition[i];
-	// 		if(word.equals(wordString) == true){
-	// 			return definition[i];
-	// 		}
-	// 	}
-	// }
+  public ArrayList<Definition> getAllDefinitions(){
+  	return definitions;
+  }
 		
 	
 
@@ -47,13 +41,17 @@ public class Word {
 		definitions.add(str);
 	} // TESTED
 
+
 	public String getDefinition(){
-		String definitionString = "";
+		String stringDefReturn = "";
 		for(Definition definition : definitions){
-			definitionString += definition;
+			stringDefReturn += definition.getDefinition() + "\n";
 		}
-		return definitionString;
+		System.out.println(stringDefReturn);
+		return stringDefReturn;
 	}// TESTED
+
+
 
 	public static ArrayList<Word> getAll(){
 		System.out.println(dictionary);
@@ -63,7 +61,6 @@ public class Word {
 
 	public static Word find(int id){
     try {
-    	System.out.println(dictionary.get(id - 1));
 	  return dictionary.get(id - 1);
 	} catch (IndexOutOfBoundsException e){
 	  return null;

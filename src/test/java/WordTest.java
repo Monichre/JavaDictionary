@@ -22,11 +22,11 @@ public class WordTest {
 
 // @Test
 // public void Word_ReturnsDefinition_True() {
-// 	Word testWord = new Word("esoteric");
+// 	Definition testDef = new Definition("example definition");
+// 	Word test = new Word("word", testDef );
 // 	Definition defToAdd = new Definition("This is a definition");
-// 	Definition defToAdd2 = new Definition("This is another definition");
-// 	testWord.addDefinition(defToAdd);
-// 	assertEquals(defToAdd, testWord.getDefinition());
+// 	test.addDefinition(defToAdd);
+// 	assertEquals(true, test.getDefinition() instanceof String);
 // }
 
 // @Test
