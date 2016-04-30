@@ -20,8 +20,17 @@ public class AppTest extends FluentTest {
   @Test
   public void rootTest() {
     goTo("http://localhost:4567/");
-    assertThat(pageSource()).contains("");
+    assertThat(pageSource()).contains("The Epicodus Dictionary");
   }
+
+  @Test
+  public void postsInputToHomeVtl() {
+  goTo("http://localhost:4567/");
+  fill("#word").with("word");
+  fill("#definition").with("example definition");
+  submit(".btn");
+  assertThat(pageSource()).contains("word");
+}
  
 
  
