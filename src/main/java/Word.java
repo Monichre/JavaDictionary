@@ -29,7 +29,7 @@ public class Word {
 
 	public Integer getId(){
     return mId;
-  }
+  }//TESTED
 
   public static ArrayList<Definition> getAllDefinitions(){
   	return definitions;
