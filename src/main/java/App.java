@@ -33,7 +33,6 @@ public class App {
 	get("/definitions/:id", (request, response) -> {
 	HashMap model = new HashMap();
 	Word word = Word.find(Integer.parseInt(request.params(":id")));
-	
 	model.put("word", word);
 	model.put("template", "templates/definitions.vtl");
 	return new ModelAndView(model, layout);

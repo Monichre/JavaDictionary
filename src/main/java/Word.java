@@ -4,7 +4,7 @@ public class Word {
 	private String mWord;
 	private int mId;
 	private static ArrayList<Word> dictionary = new ArrayList<Word>();
-	private  static ArrayList<Definition> definitions = new ArrayList<Definition>();
+	private ArrayList<Definition> mDefinitions = new ArrayList<Definition>();
 
 	// METHOD OVERLOADING ON CONSTRUCTORS //
 	public Word(String word){
@@ -15,7 +15,7 @@ public class Word {
 
 	public Word(String word, Definition str){
 		mWord = word;
-		definitions.add(str);
+		mDefinitions.add(str);
 		dictionary.add(this);
 		mId = dictionary.size();
 	}//TESTED
@@ -30,23 +30,25 @@ public class Word {
     return mId;
   }//TESTED
 
-  public static ArrayList<Definition> getAllDefinitions(){
-  	return definitions;
+  public ArrayList<Definition> getAllDefinitions(){
+  	return mDefinitions;
   }
 		
 	
 
 	public void addDefinition(Definition str){
-		definitions.add(str);
+		mDefinitions.add(str);
 	} // TESTED
 
-	public Definition getNewDefinition(){
-		return definitions.get(0);
+	public String getNewDefinition(){
+		Definition newDefinition = mDefinitions.get(0);
+		return newDefinition.getDefinition();
+		 
 	}
 
 	public String getDefinition(){
 		String stringDefReturn = "";
-		for(Definition definition : definitions){
+		for(Definition definition : mDefinitions){
 			stringDefReturn += definition.getDefinition() + "\n";
 		}
 		System.out.println(stringDefReturn);

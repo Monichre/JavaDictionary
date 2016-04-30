@@ -2,9 +2,10 @@ body {
   margin: auto;
 }
 
-h1 {
+.container h1 {
   margin: auto;
   text-align: center;
+  width: 50%;
 }
 
 p {
