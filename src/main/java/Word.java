@@ -3,7 +3,6 @@ import java.util.*;
 public class Word {
 	private String mWord;
 	private int mId;
-
 	private static ArrayList<Word> dictionary = new ArrayList<Word>();
 	private  static ArrayList<Definition> definitions = new ArrayList<Definition>();
 

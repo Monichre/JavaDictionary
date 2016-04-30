@@ -9,26 +9,20 @@
 	  #end
 	</ul>
 
-	#if ($definitions)
+	#if ($word.getAllDefinitions().size() <= 1)
 		<ul>
-
-			<li>$word.getNewDefinition()</li>
+			<li>Try adding another definition</li>
 		</ul>
 	#else
 		<ul>
-			<li>Try adding another definition</li>
+			<li><a href="/anotherDefinition/$word.getId()">$word.getNewDefinition()</a></li>
+			
 		</ul>
 	#end
 
 
-	
 
-
-
-
-
-
-	<form action="/anotherDefinition" method="post">
+	<form action="/anotherDefinition/$word.getId()" method="post">
 		<label for="anotherDefinition">Add another definition</label>
 	  	<input id="anotherDefinition" name="anotherDefinition" type="text">
 
