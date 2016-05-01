@@ -28,40 +28,35 @@ public class Word {
 
 	public Integer getId(){
     return mId;
-  }//TESTED
+  	}//TESTED
 
-  public ArrayList<Definition> getAllDefinitions(){
-  	return mDefinitions;
-  }
+	public ArrayList<Definition> getAllDefinitions(){
+		return mDefinitions;
+	}
 		
 	
-
 	public void addDefinition(Definition str){
 		mDefinitions.add(str);
 	} // TESTED
 
 	public String getNewDefinition(){
 		Definition newDefinition = mDefinitions.get(0);
-		return newDefinition.getDefinition();
-		 
-	}
+		return newDefinition.getDefinition();		 
+	} //TESTED
 
 	public String getDefinition(){
-		String stringDefReturn = "";
-		for(Definition definition : mDefinitions){
-			stringDefReturn += definition.getDefinition() + "\n";
-		}
-		System.out.println(stringDefReturn);
-		return stringDefReturn;
+	String stringDefReturn = "";
+	for(Definition definition : mDefinitions){
+		stringDefReturn += definition.getDefinition() + "\n";
+	}
+	System.out.println(stringDefReturn);
+	return stringDefReturn;
 	}// TESTED
-
-
 
 	public static ArrayList<Word> getAll(){
 		System.out.println(dictionary);
 		return dictionary;
 	}//TESTED
-
 
 	public static Word find(int id){
     try {
@@ -69,7 +64,7 @@ public class Word {
 	} catch (IndexOutOfBoundsException e){
 	  return null;
     }
-  }
+  } //TESTED
 
 	
 }
