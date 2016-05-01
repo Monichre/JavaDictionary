@@ -39,11 +39,7 @@ public class Word {
 		mDefinitions.add(str);
 	} // TESTED
 
-	public String getNewDefinition(){
-		Definition newDefinition = mDefinitions.get(0);
-		return newDefinition.getDefinition();		 
-	} //TESTED
-
+	
 	public String getDefinition(){
 	String stringDefReturn = "";
 	for(Definition definition : mDefinitions){
