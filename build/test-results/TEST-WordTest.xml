@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordTest" tests="4" skipped="0" failures="1" errors="0" timestamp="2016-05-01T00:00:16" hostname="Liams-MacBook-Air.local" time="0.01">
+<testsuite name="WordTest" tests="4" skipped="0" failures="1" errors="0" timestamp="2016-05-01T00:05:28" hostname="Liams-MacBook-Air.local" time="0.004">
   <properties/>
-  <testcase name="getAllReturnsDictionary" classname="WordTest" time="0.009">
-    <failure message="java.lang.AssertionError: expected:&lt;[Word@2b7d300a, Word@3c8ead18, Word@7adc0def]&gt; but was:&lt;[Word@40ba2c54, Word@2b7d300a, Word@3c8ead18, Word@7adc0def]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;[Word@2b7d300a, Word@3c8ead18, Word@7adc0def]&gt; but was:&lt;[Word@40ba2c54, Word@2b7d300a, Word@3c8ead18, Word@7adc0def]&gt;
+  <testcase name="getAllReturnsDictionary" classname="WordTest" time="0.003">
+    <failure message="java.lang.AssertionError: expected:&lt;[Word@28e29223, Word@2f2a9e0a, Word@3a31f9a9]&gt; but was:&lt;[Word@6fd5977, Word@28e29223, Word@2f2a9e0a, Word@3a31f9a9]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;[Word@28e29223, Word@2f2a9e0a, Word@3a31f9a9]&gt; but was:&lt;[Word@6fd5977, Word@28e29223, Word@2f2a9e0a, Word@3a31f9a9]&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -54,9 +54,9 @@
 </failure>
   </testcase>
   <testcase name="getWordReturnsWord_True" classname="WordTest" time="0.0"/>
-  <testcase name="Word_InstanceOfWord_True" classname="WordTest" time="0.0"/>
-  <testcase name="Word_ReturnsDefinition_True" classname="WordTest" time="0.001"/>
-  <system-out><![CDATA[[Word@40ba2c54, Word@2b7d300a, Word@3c8ead18, Word@7adc0def]
+  <testcase name="Word_InstanceOfWord_True" classname="WordTest" time="0.001"/>
+  <testcase name="Word_ReturnsDefinition_True" classname="WordTest" time="0.0"/>
+  <system-out><![CDATA[[Word@6fd5977, Word@28e29223, Word@2f2a9e0a, Word@3a31f9a9]
 example definition
 This is a definition
 

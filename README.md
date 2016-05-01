@@ -11,11 +11,11 @@ Setup/Installation Requirements
 
 Access to internet, modern web browser, latest Java installation
 
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}
+
 
 Known Bugs
 
-{There's a bug on the additional definition functionality. Program lacks integration testing}
+{Some of the unit testing only passes when other tests are commented out. Each and every test passes on its own}
 
 Support and contact details
 

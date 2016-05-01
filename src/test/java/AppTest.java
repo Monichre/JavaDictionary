@@ -32,17 +32,11 @@ public class AppTest extends FluentTest {
   assertThat(pageSource()).contains("word");
   click("a", withText("word"));
   assertThat(pageSource()).contains("example definition");
+  click("a", withText("Go Back"));
+  assertThat(pageSource()).contains("The Epicodus Dictionary");
 }
 
-// @Test
-//   public void postsDefinitionToWordsPage_LinkWorks() {
-//   goTo("http://localhost:4567/definitions/$word.getId()");
-//   // fill("#word").with("word");
-//   // fill("#definition").with("example definition");
-//   // submit(".btn");
-//   click("li", withText("word"));
-//   assertThat(pageSource()).contains("example definition");
-// }
+
  
 
  
