@@ -38,7 +38,7 @@ public class WordTest {
 		testArray.add(test2);
 		testArray.add(test3);
 		testArray.add(test4);
-		assertEquals(testArray, test4.getAll());
+		assertEquals(testArray, Word.getAll());
 	}
 
 	@Test

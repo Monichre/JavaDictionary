@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 public class DefinitionTest {
 
 
+
 @Test
 public void instanceOfDefinition_True() {
 	Definition testDefinition = new Definition("example");
@@ -16,4 +17,6 @@ public void returnsDefinition_True() {
 	String example = "example";
 	assertEquals(example, testDefinition.getDefinition());
 	}	
+
+	
 }   
