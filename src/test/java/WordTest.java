@@ -28,6 +28,15 @@ public class WordTest {
 	}
 
 	@Test
+	public void getId_returnsId_True() {
+		String word = "word";
+		Integer testInt = 1;
+		Word test = new Word("word");
+		assertEquals(testInt, test.getId());
+	}
+
+
+	@Test
 	public void getAll_returnsDictionary_Array() {
 		ArrayList<Word> testArray = new ArrayList<Word>();
 		Word test1 = new Word("word1");
