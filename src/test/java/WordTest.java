@@ -35,6 +35,13 @@ public class WordTest {
 		assertEquals(testInt, test.getId());
 	}
 	@Test
+	public void addDefinition_AddsDefinition_True() {
+		Definition word = new Definition("word");
+		Word test = new Word("word");
+		test.addDefinition(word);
+		assertEquals(word, test.getAllDefinitions().get(0));
+	}
+	@Test
 	public void getAllDefinitions_returnsAllDef_True() {
 		Definition word = new Definition("word");
 		Definition anotherDef = new Definition("another def");
@@ -42,6 +49,7 @@ public class WordTest {
 		test.addDefinition(word);
 		test.addDefinition(anotherDef);
 		assertEquals(word, test.getAllDefinitions().get(0));
+		assertEquals(anotherDef, test.getAllDefinitions().get(1));
 	}
 
 
