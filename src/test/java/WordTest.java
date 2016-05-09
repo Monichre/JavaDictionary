@@ -12,21 +12,18 @@ public class WordTest {
 		Word.clear();
 		assertEquals(Word.getAll().size(), 0);
 	}	
-
 	@Test
 	public void Word_InstanceOfWordWithDefinition_True() {
 		Definition testDef = new Definition("example definition");
 		Word test = new Word("word", testDef );
 		assertEquals(true, test instanceof Word);
 	}
-
 	@Test
 	public void getWord_returnsWord_String() {
 		String word = "word";
 		Word test = new Word("word");
 		assertEquals(word, test.getWord());
 	}
-
 	@Test
 	public void getId_returnsId_True() {
 		String word = "word";
@@ -51,8 +48,13 @@ public class WordTest {
 		assertEquals(word, test.getAllDefinitions().get(0));
 		assertEquals(anotherDef, test.getAllDefinitions().get(1));
 	}
-
-
+	@Test
+	public void getDefinitions_returnsDef_True() {
+		Definition word = new Definition("word def");
+		Word test = new Word("word");
+		test.addDefinition(word);
+		assertEquals(word.getDefinition(), test.getDefinition());
+	}
 	@Test
 	public void getAll_returnsDictionary_Array() {
 		ArrayList<Word> testArray = new ArrayList<Word>();
@@ -66,7 +68,6 @@ public class WordTest {
 		testArray.add(test4);
 		assertEquals(testArray, Word.getAll());
 	}
-
 	@Test
 	public void find_returnsWordById_True() {
 		Word testWord = new Word("esoteric");

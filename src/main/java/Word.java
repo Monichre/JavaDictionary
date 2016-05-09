@@ -39,7 +39,7 @@ public class Word {
 	public String getDefinition(){
 		String stringDefReturn = "";
 		for(Definition definition : mDefinitions){
-			stringDefReturn += definition.getDefinition() + "\n";
+			stringDefReturn += definition.getDefinition();
 	}
 		return stringDefReturn;
 	}
