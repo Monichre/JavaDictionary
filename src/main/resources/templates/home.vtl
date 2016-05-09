@@ -1,20 +1,20 @@
   <h1>The Epicodus Dictionary</h1>
-    <h2>Add a new Entry</h2>
+  <h2>Add a new Entry</h2>
 
-    <form action="/words" method="post">
-      <label for="word">Dictionary Entry</label>
-      <input id="word" name="word" type="text">
-      <label for="definition">Add a definition</label>
-      <input id="definition" name="definition" type="text">
-      <button type="submit" class="btn btn-default">Submit Entry</button>
-    </form>
+  <form action="/words" method="post">
+    <label for="word">Dictionary Entry</label>
+    <input id="word" name="word" type="text">
+    <label for="definition">Add a definition</label>
+    <input id="definition" name="definition" type="text">
+    <button type="submit" class="btn btn-default">Submit Entry</button>
+  </form>
 
-    #if ($words)
-      <ul class="newWords"> Latest Entries
-        #foreach ($word in $words)
-            <li><a href="/definitions/$word.getId()">$word.getWord()</a></li>
-        #end
-      </ul>
-    #else
-      <p>No new entries!</p>
-    #end
+  #if ($words)
+    <ul class="newWords"> Latest Entries
+      #foreach ($word in $words)
+          <li><a href="/definitions/$word.getId()">$word.getWord()</a></li>
+      #end
+    </ul>
+  #else
+    <p>No new entries!</p>
+  #end
